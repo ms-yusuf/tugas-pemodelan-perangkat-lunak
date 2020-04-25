@@ -11,6 +11,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(UserSeeder::class);
+        $this->call(users::class);
+
+        if (config('variables.WITH_FAKER')) {
+            // FAKE data
+        }
     }
 }
