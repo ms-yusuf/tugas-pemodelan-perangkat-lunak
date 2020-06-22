@@ -1,6 +1,5 @@
 <?php
 
-Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Auth::routes();
 
 Route::group(['prefix' => ADMIN, 'as' => ADMIN . '.', 'middleware'=>['auth', 'Role:10']], function () {
@@ -11,4 +10,9 @@ Route::group(['prefix' => ADMIN, 'as' => ADMIN . '.', 'middleware'=>['auth', 'Ro
 
 Route::get('/', function () {
     return view('welcome');
+});
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
+Route::get('/facade', function(){
+  General::sayHello();
 });

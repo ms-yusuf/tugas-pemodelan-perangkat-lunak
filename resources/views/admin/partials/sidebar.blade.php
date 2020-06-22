@@ -1,6 +1,5 @@
 <div class="sidebar">
 	<div class="sidebar-inner">
-		<!-- ### $Sidebar Header ### -->
 		<div class="sidebar-logo">
 			<div class="peers ai-c fxw-nw">
 				<div class="peer peer-greed">
@@ -12,7 +11,7 @@
 								</div>
 							</div>
 							<div class="peer peer-greed">
-								<h5 class="lh-1 mB-0 logo-text">Medigent</h5>
+								<h5 class="lh-1 mB-0 logo-text">Tugas PPL</h5>
 							</div>
 						</div>
 					</a>
@@ -26,9 +25,7 @@
 				</div>
 			</div>
 		</div>
-
-		<!-- ### $Sidebar Menu ### -->
-		<ul class="sidebar-menu scrollable pos-r">
+    <ul class="sidebar-menu scrollable pos-r">
 			@include('admin.partials.menu')
 		</ul>
 	</div>
